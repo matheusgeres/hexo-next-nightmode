@@ -1,6 +1,6 @@
 {
-  "name": "hexo-next-nightmode",
-  "version": "1.0.1",
+  "name": "@1v9/hexo-next-nightmode",
+  "version": "1.0.4",
   "description": "Add Night Mode support for NexT",
   "main": "index.js",
   "scripts": {
@@ -10,6 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/1v9/hexo-next-nightmode.git"
   },
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
   "keywords": [
     "hexo",
     "next"
