@@ -38,12 +38,6 @@ npm config set @1v9:registry=https://npm.pkg.github.com
 npm i @1v9/hexo-next-nightmode
 ```
 
-## Uninstall
-
-```bash
-npm un @1v9/hexo-next-nightmode
-```
-
 ## Usage
 
 ### Hotkey
@@ -57,14 +51,21 @@ You can add follow options in both **hexo** or **theme** `_config.yml`.
 ```yml
 next_nightmode:
   enable: false
-  # FontAwesome or ForkAwesome icon in sidebar button
+  # FontAwesome or ForkAwesome icon in sidebar button.
   icon: lightbulb-o
-  # Text for sidebar button
+  # Text for sidebar button.
   text: Night Mode
-  # If ture, when you disable Night Mode, Hexo will show warning messages in your console.
+  # If true, when you disable Night Mode, Hexo will show warning messages in your console.
   reminder: false
+  # Debugger for alpha option below.
+  debugger: false
+  # Support experimental prefers-color-scheme media query.
+  # For now if alpha mode enabled, sidebar button will be disabled.
+  # The only way to toggle night mode is your system color scheme settings.
+  # Also see: https://caniuse.com/#feat=prefers-color-scheme.
+  alpha: false
 ```
 
 ## Custom
 
-NexT supports customizing styles, so you can custom dark mode style by yourself, check `nightmode.styl` then do your job.
+NexT supports customizing styles, so you can custom dark mode style by yourself, check `css/scheme.styl` then do your job.
